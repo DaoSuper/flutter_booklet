@@ -16,7 +16,7 @@ import 'package:flutter_booklet/pages/anim/08_implicitly_animated_widget/implici
 import 'package:flutter_booklet/pages/anim/09_other/other_page.dart';
 import 'package:flutter_booklet/pages/anim/anim_page.dart';
 import 'package:flutter_booklet/pages/anim/clock/clock_page.dart';
-import 'package:flutter_booklet/pages/miscellaneous/Miscellaneous_page.dart';
+import 'package:flutter_booklet/pages/miscellaneous/miscellaneous_page.dart';
 import 'package:flutter_booklet/routes/router_utils.dart';
 
 import '../pages/anim/01_text/01_color_static.dart';
@@ -121,6 +121,6 @@ class AppRouter {
   }
 
   static toPage(BuildContext context, Widget page){
-    Navigator.push(context, MaterialPageRoute(builder: (_) => page));
+    Navigator.push(context, Right2LeftRouter(child: page));
   }
 }

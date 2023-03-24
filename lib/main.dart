@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_booklet/pages/home/home.dart';
+import 'package:flutter_booklet/pages/app_page.dart';
 import 'package:flutter_booklet/routes/app_router.dart';
 
 void main() {
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const AppPage(),
     );
   }
 }
