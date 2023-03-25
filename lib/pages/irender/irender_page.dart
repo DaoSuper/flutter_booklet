@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_booklet/pages/anim/10_ticker/ticker_page.dart';
+import 'package:flutter_booklet/pages/irender/01_timer/timer_demo.dart';
 import 'package:flutter_booklet/widgets/dao_button.dart';
 
 class IRenderPage extends StatelessWidget {
@@ -21,9 +21,9 @@ class IRenderPage extends StatelessWidget {
             runSpacing: 8,
             children:  [
               ItemBtn(
-                btnName: 'Ticker', 
+                btnName: 'Timer', 
                 onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (_) => const TickerPage()));
+                  TimerDemo.timerTest();
                 }
               ),
             ],

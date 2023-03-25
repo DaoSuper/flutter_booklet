@@ -13,8 +13,8 @@ class _AppPageState extends State<AppPage>{
 
   final PageController controller = PageController();
   final List<Map<String, dynamic>> navigations = [
-    {'name': '动画探索', "icon": Icons.flutter_dash,},
     {'name': '渲染机制', "icon": Icons.motion_photos_paused,},
+    {'name': '动画探索', "icon": Icons.flutter_dash,},
     // {'name': '绘画', "icon": Icons.brush,},
     // {'name': '手势', "icon": Icons.gesture,},
     // {'name': '滑动', "icon": Icons.toll_outlined,},
@@ -32,15 +32,14 @@ class _AppPageState extends State<AppPage>{
     return Scaffold(
       body: PageView(
         controller: controller,
-        reverse: true,
         onPageChanged: (index) {
           setState(() {
             currentIndex = controller.page!.round();
           });
         },
         children: const [
-          AnimPage(),
           IRenderPage(),
+          AnimPage(),
         ],
       ),
       bottomNavigationBar: BottomAppBar(
@@ -71,12 +70,12 @@ class _AppPageState extends State<AppPage>{
         onTap: (){
           controller.animateToPage(
             index,
-            duration: Duration(milliseconds: 200),
+            duration: const Duration(milliseconds: 200),
             curve: Curves.ease,
           );
         },
         child: Container(
-          margin: EdgeInsets.only(top: 8),
+          margin: const EdgeInsets.only(top: 8),
           height: 48,
           child: Column(
             children: [
