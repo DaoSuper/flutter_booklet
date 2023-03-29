@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_booklet/pages/irender/01_timer/timer_demo.dart';
+import 'package:flutter_booklet/pages/irender/04_multi_node/multi_node.dart';
+import 'package:flutter_booklet/routes/app_router.dart';
 import 'package:flutter_booklet/widgets/dao_button.dart';
 
 class IRenderPage extends StatelessWidget {
@@ -24,6 +26,12 @@ class IRenderPage extends StatelessWidget {
                 btnName: 'Timer', 
                 onPressed: (){
                   TimerDemo.timerTest();
+                }
+              ),
+              ItemBtn(
+                btnName: 'MultiNode', 
+                onPressed: (){
+                  AppRouter.toPage(context, const MultiNode());
                 }
               ),
             ],
