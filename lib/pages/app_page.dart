@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_booklet/pages/anim/anim_page.dart';
 import 'package:flutter_booklet/pages/irender/irender_page.dart';
+import 'package:flutter_booklet/pages/miscellaneous/miscellaneous_page.dart';
 
 class AppPage extends StatefulWidget {
   const AppPage({ Key? key }) : super(key: key);
@@ -15,7 +16,7 @@ class _AppPageState extends State<AppPage>{
   final List<Map<String, dynamic>> navigations = [
     {'name': '渲染机制', "icon": Icons.motion_photos_paused,},
     {'name': '动画探索', "icon": Icons.flutter_dash,},
-    // {'name': '绘画', "icon": Icons.brush,},
+    {'name': '杂记', "icon": Icons.menu_book,},
     // {'name': '手势', "icon": Icons.gesture,},
     // {'name': '滑动', "icon": Icons.toll_outlined,},
   ];
@@ -40,6 +41,7 @@ class _AppPageState extends State<AppPage>{
         children: const [
           IRenderPage(),
           AnimPage(),
+          MiscellaneousPage()
         ],
       ),
       bottomNavigationBar: BottomAppBar(
