@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_booklet/pages/irender/01_timer/timer_demo.dart';
 import 'package:flutter_booklet/pages/irender/04_multi_node/multi_node.dart';
+import 'package:flutter_booklet/pages/irender/08_key/global_key_demo/global_key_demo.dart';
+import 'package:flutter_booklet/pages/irender/08_key/key_demo.dart';
+import 'package:flutter_booklet/pages/irender/08_key/key_demo2.dart';
+import 'package:flutter_booklet/pages/irender/08_key/no_key_demo.dart';
 import 'package:flutter_booklet/pages/irender/state_demo/state_demo.dart';
 import 'package:flutter_booklet/routes/app_router.dart';
 import 'package:flutter_booklet/widgets/dao_button.dart';
@@ -40,6 +44,30 @@ class IRenderPage extends StatelessWidget {
                 btnName: 'MultiNode', 
                 onPressed: (){
                   AppRouter.toPage(context, const MultiNode());
+                }
+              ),
+              ItemBtn(
+                btnName: 'KeyDemo', 
+                onPressed: (){
+                  AppRouter.toPage(context, const KeyDemo());
+                }
+              ),
+              ItemBtn(
+                btnName: 'NoKeyDemo', 
+                onPressed: (){
+                  AppRouter.toPage(context, const NoKeyDemo());
+                }
+              ),
+              ItemBtn(
+                btnName: 'KeyDemo2', 
+                onPressed: (){
+                  AppRouter.toPage(context, const KeyDemo2());
+                }
+              ),
+              ItemBtn(
+                btnName: 'GlobalKeyDemo', 
+                onPressed: (){
+                  AppRouter.toPage(context, const GlobalKeyDemo());
                 }
               ),
             ],

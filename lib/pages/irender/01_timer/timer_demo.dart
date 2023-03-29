@@ -24,8 +24,8 @@ class TimerDemo {
     for (int i = 0; i < count; i++) {
       sum += i;
     }
-
+    
     int end = DateTime.now().millisecondsSinceEpoch;
-    debugPrint("${((end - start) / 1000).toStringAsFixed(4)} s");
+    debugPrint("sum: $sum ${((end - start) / 1000).toStringAsFixed(4)} s");
   }
 }
