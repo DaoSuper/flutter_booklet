@@ -7,6 +7,7 @@ import 'package:flutter_booklet/pages/irender/08_key/key_demo2.dart';
 import 'package:flutter_booklet/pages/irender/08_key/no_key_demo.dart';
 import 'package:flutter_booklet/pages/irender/09_proxy/color_provider.dart';
 import 'package:flutter_booklet/pages/irender/09_proxy/parent_data_widget_demo.dart';
+import 'package:flutter_booklet/pages/irender/10_widgets_binding/mixin_demo.dart';
 import 'package:flutter_booklet/pages/irender/state_demo/state_demo.dart';
 import 'package:flutter_booklet/routes/app_router.dart';
 import 'package:flutter_booklet/widgets/dao_button.dart';
@@ -82,6 +83,33 @@ class IRenderPage extends StatelessWidget {
                 btnName: 'ParentDataWidgetDemo', 
                 onPressed: (){
                   AppRouter.toPage(context, const ParentDataWidgetDemo());
+                }
+              ),
+              ItemBtn(
+                btnName: 'mixinDemo', 
+                onPressed: (){
+                  Human toly = Human();
+                  toly.inhale();
+                  toly.run();
+                  debugPrint(toly.oxygen.toString());
+                }
+              ),
+              ItemBtn(
+                btnName: 'Multiple mixin', 
+                onPressed: (){
+                  Human2 toly2 = Human2();
+                  toly2.inhale();
+                  toly2.run();
+                  debugPrint(toly2.oxygen.toString());
+                }
+              ),
+              ItemBtn(
+                btnName: 'Multiple mixin2', 
+                onPressed: (){
+                  Human3 toly3 = Human3();
+                  toly3.inhale();
+                  toly3.run();
+                  debugPrint(toly3.oxygen.toString());
                 }
               ),
             ],
