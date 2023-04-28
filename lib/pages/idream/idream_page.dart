@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_booklet/pages/idream/timer/timer_page.dart';
 import 'package:flutter_booklet/pages/irender/01_timer/timer_demo.dart';
+import 'package:flutter_booklet/routes/app_router.dart';
 import 'package:flutter_booklet/widgets/dao_button.dart';
 
 class IDreamPage extends StatelessWidget {
@@ -25,6 +27,12 @@ class IDreamPage extends StatelessWidget {
                 onPressed: (){
                   TimerDemo.timerTest();
                   TimerDemo.do2();
+                }
+              ),
+              ItemBtn(
+                btnName: 'TimerPage', 
+                onPressed: (){
+                  AppRouter.toPage(context, const TimerPage());
                 }
               ),
             ],
