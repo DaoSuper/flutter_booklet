@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_booklet/pages/anim/anim_page.dart';
 import 'package:flutter_booklet/pages/idream/idream_page.dart';
+import 'package:flutter_booklet/pages/ilayout/ilayout_page.dart';
 import 'package:flutter_booklet/pages/irender/irender_page.dart';
 import 'package:flutter_booklet/pages/miscellaneous/miscellaneous_page.dart';
 
@@ -20,7 +21,7 @@ class _AppPageState extends State<AppPage>{
     // {'name': ' 手势探索', "icon": Icons.touch_app,}, //https://juejin.cn/book/6896378716427911181
     {'name': '动画探索', "icon": Icons.motion_photos_paused,}, //https://juejin.cn/book/6965102582473687071
     // {'name': '滑动探索', "icon": Icons.swipe,}, //https://juejin.cn/book/6984685333312962573
-    // {'name': '布局探索', "icon": Icons.dashboard,}, //https://juejin.cn/book/7075958265250578469
+    {'name': '布局探索', "icon": Icons.dashboard,}, //https://juejin.cn/book/7075958265250578469
     {'name': '渲染机制', "icon": Icons.brush,}, //https://juejin.cn/book/6965102582473687071
     {'name': '杂记', "icon": Icons.menu_book,},
   ];
@@ -45,6 +46,7 @@ class _AppPageState extends State<AppPage>{
         children: const [
           IDreamPage(),
           IRenderPage(),
+          ILayoutPage(),
           AnimPage(),
           MiscellaneousPage()
         ],

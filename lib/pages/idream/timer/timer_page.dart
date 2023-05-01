@@ -5,6 +5,7 @@ import 'package:flutter_booklet/pages/idream/timer/stopwatch_widget.dart';
 import 'Record_panel.dart';
 import 'button_tools.dart';
 import 'model/time_record.dart';
+import 'setting_page.dart';
 
 
 class TimerPage extends StatefulWidget {
@@ -144,7 +145,9 @@ class _TimerPageState extends State<TimerPage> {
   }
 
   void _onSelectItem(String value) {
-
+    if(value == "设置"){
+      Navigator.of(context).push(MaterialPageRoute(builder: (_)=> const SettingPage()));
+    }
   }
 
 }
