@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_booklet/pages/idream/timer/stopwatch_widget.dart';
 
-import 'Record_panel.dart';
+import 'record_panel.dart';
 import 'button_tools.dart';
 import 'model/time_record.dart';
 import 'setting_page.dart';
