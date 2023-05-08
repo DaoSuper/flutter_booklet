@@ -3,6 +3,8 @@ import 'package:flutter_booklet/pages/idream/timer/timer_page.dart';
 import 'package:flutter_booklet/pages/ilayout/01_constraints/constraints_demo.dart';
 import 'package:flutter_booklet/pages/ilayout/02_common_constraints/nxm_demo.dart';
 import 'package:flutter_booklet/pages/ilayout/03_multi_child/01_flex_demo.dart';
+import 'package:flutter_booklet/pages/ilayout/11_custom_layout/custom_layout_demo.dart';
+import 'package:flutter_booklet/pages/ilayout/11_custom_layout/custom_multi_layout_demo.dart';
 import 'package:flutter_booklet/routes/app_router.dart';
 import 'package:flutter_booklet/widgets/dao_button.dart';
 
@@ -55,6 +57,18 @@ class ILayoutPage extends StatelessWidget {
                 btnName: 'WrapDemo', 
                 onPressed: (){
                   AppRouter.toPage(context, WrapDemo());
+                }
+              ),
+              ItemBtn(
+                btnName: 'CustomLayoutDemo', 
+                onPressed: (){
+                  AppRouter.toPage(context, const CustomLayoutDemo());
+                }
+              ),
+              ItemBtn(
+                btnName: 'CustomMultiLayoutDemo', 
+                onPressed: (){
+                  AppRouter.toPage(context, const CustomMultiLayoutDemo());
                 }
               ),
             ],
