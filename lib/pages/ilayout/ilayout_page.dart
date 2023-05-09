@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_booklet/pages/idream/timer/timer_page.dart';
 import 'package:flutter_booklet/pages/ilayout/01_constraints/constraints_demo.dart';
 import 'package:flutter_booklet/pages/ilayout/02_common_constraints/nxm_demo.dart';
 import 'package:flutter_booklet/pages/ilayout/03_multi_child/01_flex_demo.dart';
+import 'package:flutter_booklet/pages/ilayout/11_custom_layout/circle_flow_menu.dart';
+import 'package:flutter_booklet/pages/ilayout/11_custom_layout/custom_flow_demo.dart';
 import 'package:flutter_booklet/pages/ilayout/11_custom_layout/custom_layout_demo.dart';
 import 'package:flutter_booklet/pages/ilayout/11_custom_layout/custom_multi_layout_demo.dart';
+import 'package:flutter_booklet/pages/ilayout/11_custom_layout/flow_menu.dart';
 import 'package:flutter_booklet/routes/app_router.dart';
 import 'package:flutter_booklet/widgets/dao_button.dart';
 
@@ -69,6 +71,24 @@ class ILayoutPage extends StatelessWidget {
                 btnName: 'CustomMultiLayoutDemo', 
                 onPressed: (){
                   AppRouter.toPage(context, const CustomMultiLayoutDemo());
+                }
+              ),
+              ItemBtn(
+                btnName: 'CustomFlowDemo', 
+                onPressed: (){
+                  AppRouter.toPage(context, const CustomFlowDemo());
+                }
+              ),
+              ItemBtn(
+                btnName: 'FlowMenu', 
+                onPressed: (){
+                  AppRouter.toPage(context, const FlowMenu());
+                }
+              ),
+              ItemBtn(
+                btnName: 'CircleFlowMenu', 
+                onPressed: (){
+                  AppRouter.toPage(context, const CircleFlowMenu());
                 }
               ),
             ],
