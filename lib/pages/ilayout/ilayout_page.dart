@@ -7,6 +7,8 @@ import 'package:flutter_booklet/pages/ilayout/11_custom_layout/custom_flow_demo.
 import 'package:flutter_booklet/pages/ilayout/11_custom_layout/custom_layout_demo.dart';
 import 'package:flutter_booklet/pages/ilayout/11_custom_layout/custom_multi_layout_demo.dart';
 import 'package:flutter_booklet/pages/ilayout/11_custom_layout/flow_menu.dart';
+import 'package:flutter_booklet/pages/ilayout/13_overlay/find_render_object_demo.dart';
+import 'package:flutter_booklet/pages/ilayout/13_overlay/overlay_demo.dart';
 import 'package:flutter_booklet/routes/app_router.dart';
 import 'package:flutter_booklet/widgets/dao_button.dart';
 
@@ -89,6 +91,18 @@ class ILayoutPage extends StatelessWidget {
                 btnName: 'CircleFlowMenu', 
                 onPressed: (){
                   AppRouter.toPage(context, const CircleFlowMenu());
+                }
+              ),
+              ItemBtn(
+                btnName: 'FindRenderObjectDemo', 
+                onPressed: (){
+                  AppRouter.toPage(context, const FindRenderObjectDemo());
+                }
+              ),
+              ItemBtn(
+                btnName: 'OverlayDemo', 
+                onPressed: (){
+                  AppRouter.toPage(context, const OverlayDemo());
                 }
               ),
             ],

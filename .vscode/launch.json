@@ -8,7 +8,7 @@
             "name": "flutter_booklet",
             "request": "launch",
             "type": "dart",
-            "program": "lib/main_dev.dart"
+            "program": "lib/main.dart"
         },
         {
             "name": "flutter_booklet (profile mode)",
