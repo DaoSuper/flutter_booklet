@@ -3,7 +3,7 @@ import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_booklet/pages/idraw/p04_canvas/coordinate.dart';
+import 'package:flutter_booklet/widgets/coordinate.dart';
 class PaperDemo extends StatefulWidget {
   const PaperDemo({super.key});
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_booklet/pages/idraw/p04_canvas/14_image/paper.dart';
 import 'package:flutter_booklet/pages/idraw/p04_canvas/19_text/text_paper.dart';
+import 'package:flutter_booklet/pages/idraw/p05_path/draw_path.dart';
 import 'package:flutter_booklet/routes/app_router.dart';
 import 'package:flutter_booklet/widgets/dao_button.dart';
 
@@ -32,6 +33,12 @@ class IDrawPage extends StatelessWidget {
                 btnName: 'TextPaper', 
                 onPressed: (){
                   AppRouter.toPage(context, const TextPaper());
+                }
+              ),
+              ItemBtn(
+                btnName: 'DrawPath', 
+                onPressed: (){
+                  AppRouter.toPage(context, const DrawPath());
                 }
               ),
             ],
