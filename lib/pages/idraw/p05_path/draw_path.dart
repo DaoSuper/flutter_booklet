@@ -9,6 +9,10 @@ import 'package:flutter_booklet/pages/idraw/p05_path/07_cubic.dart';
 import 'package:flutter_booklet/pages/idraw/p05_path/08_addRRect.dart';
 import 'package:flutter_booklet/pages/idraw/p05_path/09_addOval.dart';
 import 'package:flutter_booklet/pages/idraw/p05_path/10_addPolygon.dart';
+import 'package:flutter_booklet/pages/idraw/p05_path/12_close_reset_shift.dart';
+import 'package:flutter_booklet/pages/idraw/p05_path/13_getBounds_contains.dart';
+import 'package:flutter_booklet/pages/idraw/p05_path/15_combine.dart';
+import 'package:flutter_booklet/pages/idraw/p05_path/17_computeMetrics.dart';
 import 'package:flutter_booklet/routes/app_router.dart';
 import 'package:flutter_booklet/widgets/dao_button.dart';
 
@@ -88,6 +92,30 @@ class DrawPath extends StatelessWidget {
                 btnName: 'AddPolygonDemo', 
                 onPressed: (){
                   AppRouter.toPage(context, const AddPolygonDemo());
+                }
+              ),
+              ItemBtn(
+                btnName: 'CloseResetShiftDemo', 
+                onPressed: (){
+                  AppRouter.toPage(context, const CloseResetShiftDemo());
+                }
+              ),
+              ItemBtn(
+                btnName: 'GetBoundsContainsDemo', 
+                onPressed: (){
+                  AppRouter.toPage(context, const GetBoundsContainsDemo());
+                }
+              ),
+              ItemBtn(
+                btnName: 'CombineDemo', 
+                onPressed: (){
+                  AppRouter.toPage(context, const CombineDemo());
+                }
+              ),
+              ItemBtn(
+                btnName: 'ComputeMetricsDemo', 
+                onPressed: (){
+                  AppRouter.toPage(context, const ComputeMetricsDemo());
                 }
               ),
             ],
