@@ -1,4 +1,3 @@
-import 'package:flutter_booklet/widgets/coordinate.dart';
 import 'package:image/image.dart' as image;
 
 import 'package:flutter/material.dart';

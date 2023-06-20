@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_booklet/pages/idraw/p06_color/s02_colors.dart';
 import 'package:flutter_booklet/pages/idraw/p06_color/s03_blendMode.dart';
 import 'package:flutter_booklet/pages/idraw/p06_color/s05_image_color.dart';
+import 'package:flutter_booklet/pages/idraw/p06_color/s07_shader_gradient_linear.dart';
+import 'package:flutter_booklet/pages/idraw/p06_color/s08_shader_gradient_radial.dart';
+import 'package:flutter_booklet/pages/idraw/p06_color/s09_shader_gradient_sweep.dart';
 import 'package:flutter_booklet/routes/app_router.dart';
 import 'package:flutter_booklet/widgets/dao_button.dart';
 
@@ -39,6 +42,24 @@ class DrawColor extends StatelessWidget {
                 btnName: 'ImageColorDemo', 
                 onPressed: (){
                   AppRouter.toPage(context, const ImageColorDemo());
+                }
+              ),
+              ItemBtn(
+                btnName: 'ShaderGradientLinearDemo', 
+                onPressed: (){
+                  AppRouter.toPage(context, const ShaderGradientLinearDemo());
+                }
+              ),
+              ItemBtn(
+                btnName: 'ShaderGradientRadialDemo', 
+                onPressed: (){
+                  AppRouter.toPage(context, const ShaderGradientRadialDemo());
+                }
+              ),
+              ItemBtn(
+                btnName: 'ShaderGradientSweepDemo', 
+                onPressed: (){
+                  AppRouter.toPage(context, const ShaderGradientSweepDemo());
                 }
               ),
             ],
