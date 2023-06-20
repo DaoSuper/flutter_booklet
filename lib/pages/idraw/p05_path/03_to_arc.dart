@@ -44,14 +44,14 @@ class PaperPainter extends CustomPainter {
     );
 
     path.lineTo(30, 30);
-    path..arcTo(rect, 0, pi * 1.5, true);
+    path.arcTo(rect, 0, pi * 1.5, true);
     canvas.drawPath(path, paint);
 
     path.reset();
     canvas.translate(0, 200);
 
     path.lineTo(30, 30);
-    path..arcTo(rect, 0, pi * 1.5, false);
+    path.arcTo(rect, 0, pi * 1.5, false);
     canvas.drawPath(path, paint);
   }
 

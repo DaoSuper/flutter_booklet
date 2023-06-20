@@ -92,13 +92,13 @@ class _SimplePageState extends State<SimplePage> {
     );
   }
 
-  bool _burstAnimItemClick(int index) {
-    debugPrint("index:$index");
-    if (index == 0) {
-      return false;
-    }
-    return true;
-  }
+  // bool _burstAnimItemClick(int index) {
+  //   debugPrint("index:$index");
+  //   if (index == 0) {
+  //     return false;
+  //   }
+  //   return true;
+  // }
 
   Widget _buildMenu() {
     return Container(

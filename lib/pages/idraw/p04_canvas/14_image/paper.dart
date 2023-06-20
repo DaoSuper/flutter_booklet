@@ -67,7 +67,7 @@ class PaperPainter extends CustomPainter {
   void paint(ui.Canvas canvas, Size size) {
     coordinate.paint(canvas, size);
     canvas.translate(size.width / 2, size.height / 2);
-    print('canvas size ${size.width / 2},${size.height / 2}');
+    debugPrint('canvas size ${size.width / 2},${size.height / 2}');
     _drawImage(canvas);
     _drawImageRect(canvas);
   }
@@ -84,7 +84,7 @@ class PaperPainter extends CustomPainter {
 
     double srcWidth = image!.width/2;
     double srcHeight = image!.height/2;
-    print('image size ${image!.width},${image!.height}');
+    debugPrint('image size ${image!.width},${image!.height}');
     canvas.drawImageRect(
       image!, 
       Rect.fromCenter(center: Offset(image!.width/4, image!.height/4), width: srcWidth, height: srcHeight), 

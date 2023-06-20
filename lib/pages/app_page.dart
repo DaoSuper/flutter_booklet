@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_booklet/pages/anim/anim_page.dart';
-import 'package:flutter_booklet/pages/idraw/idraw_page.dart';
-import 'package:flutter_booklet/pages/idream/idream_page.dart';
-import 'package:flutter_booklet/pages/ilayout/ilayout_page.dart';
-import 'package:flutter_booklet/pages/irender/irender_page.dart';
+import 'package:flutter_booklet/pages/home/home.dart';
 import 'package:flutter_booklet/pages/miscellaneous/miscellaneous_page.dart';
 
 class AppPage extends StatefulWidget {
@@ -17,14 +13,14 @@ class _AppPageState extends State<AppPage>{
 
   final PageController controller = PageController();
   final List<Map<String, dynamic>> navigations = [
-    {'name': '语言基础', "icon": Icons.flutter_dash,}, //https://juejin.cn/book/6844733827617652750
-    {'name': '绘制指南', "icon": Icons.palette,}, //https://juejin.im/book/6844733827265331214
+    {'name': '首页', "icon": Icons.home_filled,}, //https://juejin.cn/book/6844733827617652750
+    // {'name': '绘制指南', "icon": Icons.palette,}, //https://juejin.im/book/6844733827265331214
     // {'name': ' 手势探索', "icon": Icons.touch_app,}, //https://juejin.cn/book/6896378716427911181
-    {'name': '动画探索', "icon": Icons.motion_photos_paused,}, //https://juejin.cn/book/6965102582473687071
+    // {'name': '动画探索', "icon": Icons.motion_photos_paused,}, //https://juejin.cn/book/6965102582473687071
     // {'name': '滑动探索', "icon": Icons.swipe,}, //https://juejin.cn/book/6984685333312962573
-    {'name': '布局探索', "icon": Icons.dashboard,}, //https://juejin.cn/book/7075958265250578469
-    {'name': '渲染机制', "icon": Icons.brush,}, //https://juejin.cn/book/6965102582473687071
-    // {'name': '杂记', "icon": Icons.menu_book,},
+    // {'name': '布局探索', "icon": Icons.dashboard,}, //https://juejin.cn/book/7075958265250578469
+    // {'name': '渲染机制', "icon": Icons.brush,}, //https://juejin.cn/book/6965102582473687071
+    {'name': '杂记', "icon": Icons.menu_book,},
   ];
   int currentIndex = 0;
 
@@ -45,12 +41,8 @@ class _AppPageState extends State<AppPage>{
           });
         },
         children: const [
-          IDreamPage(),
-          IDrawPage(),
-          IRenderPage(),
-          ILayoutPage(),
-          AnimPage(),
-          // MiscellaneousPage()
+          HomePage(),
+          MiscellaneousPage()
         ],
       ),
       bottomNavigationBar: BottomAppBar(

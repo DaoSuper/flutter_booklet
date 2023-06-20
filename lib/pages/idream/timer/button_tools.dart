@@ -37,18 +37,18 @@ class ButtonTools extends StatelessWidget {
         children: [
           if (state != StopWatchType.none)
             GestureDetector(
-              child: Icon(Icons.refresh, size: 28, color: resetColor),
               onTap: stopped ? onReset : null,
+              child: Icon(Icons.refresh, size: 28, color: resetColor),
             ),
           FloatingActionButton(
             backgroundColor: Theme.of(context).primaryColor,
-            child: running ? const Icon(Icons.stop) : const Icon(Icons.play_arrow),
             onPressed: toggle,
+            child: running ? const Icon(Icons.stop) : const Icon(Icons.play_arrow),
           ),
           if (state != StopWatchType.none)
             GestureDetector(
-              child: Icon(Icons.flag_outlined, size: 28, color: flagColor),
               onTap: running ? onRecoder : null,
+              child: Icon(Icons.flag_outlined, size: 28, color: flagColor),
             ),
         ],
       ),

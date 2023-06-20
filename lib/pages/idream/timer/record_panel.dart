@@ -43,7 +43,7 @@ class RecordPanel extends StatelessWidget {
         const Spacer(),
         Padding(
           padding: itemPadding,
-          child: Text("+" + durationToString(record[reverseIndex].addition)),
+          child: Text("+${durationToString(record[reverseIndex].addition)}"),
         ),
       ],
     );

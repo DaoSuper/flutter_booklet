@@ -64,7 +64,7 @@ class _SwitcherAnimState extends State<SwitcherAnim> {
       highlightColor: const Color(0xffF88B0A),
       splashColor: Colors.red,
       shape: const CircleBorder(
-        side: BorderSide(width: 2.0, color: Color(0xFFFFDFDFDF)),
+        side: BorderSide(width: 2.0, color: Color(0xFFDFDFDF)),
       ),
       child: Icon(icon, color: Colors.white,),
     );

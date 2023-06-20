@@ -19,7 +19,7 @@ mixin B on D, C {
 mixin C {}
 
 abstract class D {
-  int _count = 0;
+  final int _count = 0;
 
   void say();
 }

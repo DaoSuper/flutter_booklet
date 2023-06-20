@@ -1,8 +1,8 @@
 //  is 关键字来校验一个对象是否是某个类型
 // 当一个类 继承、实现 或 混入 某个类，可视为该类型
 void main(){
-  Rectangle rectangle = Rectangle(Vec2(10,10));
-  print(rectangle is Shape); // true
+  // Rectangle rectangle = Rectangle(Vec2(10,10));
+  // print(rectangle is Shape); // true
 
   // 通过 as 关键字对类型进行强制转换
   {

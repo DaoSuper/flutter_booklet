@@ -1,4 +1,6 @@
 
+import 'package:flutter/material.dart';
+
 void main() {
   Circle circle = Circle(Vec2(2, 2));
   circle.move();
@@ -25,13 +27,13 @@ abstract class Shape {
 
   void printInfo(){
     String name = debugLabelName();
-    print("【$name】center:(${center.x},${center.y})");
+    debugPrint("【$name】center:(${center.x},${center.y})");
   }
 
   void move() {
     center.x += 10;
     center.y += 10;
-    print("$runtimeType:center:(${center.x}, ${center.y})");
+    debugPrint("$runtimeType:center:(${center.x}, ${center.y})");
   }
 }
 

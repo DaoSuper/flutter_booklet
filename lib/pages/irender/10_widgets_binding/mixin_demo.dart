@@ -48,12 +48,11 @@ mixin RespiratorySystem {
 
 // 混入多个 mixin 时，防止同名方法的覆盖可以用on
 mixin MotorSystem on RespiratorySystem{
-  int _cost = 0; // 每次消耗的氧气量
+// 每次消耗的氧气量
 
   @override
   void initInstances({int count = 3}) {
     super.initInstances();
-    _cost = count;
     debugPrint('========初始化【运动系统】完成=========');
   }
 

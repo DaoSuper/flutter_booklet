@@ -21,7 +21,7 @@ class _TimerPageState extends State<TimerPage> {
   Duration _duration = Duration.zero;
 
   late Ticker _ticker;
-  List<TimeRecord> _record = [];
+  final List<TimeRecord> _record = [];
 
   @override
   void initState() {

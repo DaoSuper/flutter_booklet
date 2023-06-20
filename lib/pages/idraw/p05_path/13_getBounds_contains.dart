@@ -51,8 +51,8 @@ class PaperPainter extends CustomPainter {
         canvas.drawPath(path.transform(Matrix4.rotationZ(i*pi/4).storage), paint);
       }
 
-      print(path.contains(Offset(20, 20)));
-      print(path.contains(Offset(0, 20)));
+      debugPrint(path.contains(Offset(20, 20)).toString());
+      debugPrint(path.contains(Offset(0, 20)).toString());
 
       Rect bounds = path.getBounds();
       canvas.drawRect(bounds, Paint()

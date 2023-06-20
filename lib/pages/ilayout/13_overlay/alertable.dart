@@ -60,9 +60,9 @@ class _AlertableState extends State<Alertable>
 
     const double boxWidth = 250;
     const double marginTop = 4;
-    final EdgeInsets padding = EdgeInsets.symmetric(horizontal: 8, vertical: 4);
+    // final EdgeInsets padding = EdgeInsets.symmetric(horizontal: 8, vertical: 4);
 
-    double spineOffset = (boxWidth - 6) / 2;
+    // double spineOffset = (boxWidth - 6) / 2;
     double winWidth = MediaQuery.of(context).size.width;
     // 获取点击目标尺寸、偏移信息
     if(renderObject != null && renderObject is RenderBox) {
@@ -81,13 +81,13 @@ class _AlertableState extends State<Alertable>
           topLeftOffset.dx,
           topLeftOffset.dy + offset.dy
         );
-        spineOffset = (targetSize.width - 6) / 2;
+        // spineOffset = (targetSize.width - 6) / 2;
       } else if (outRight) {
         targetOffset = Offset(
           topLeftOffset.dx - boxWidth + targetSize.width,
           topLeftOffset.dy + offset.dy,
         );
-        spineOffset = boxWidth - (targetSize.width + 6) / 2;
+        // spineOffset = boxWidth - (targetSize.width + 6) / 2;
       } else {
         targetOffset = topLeftOffset + offset;
       }

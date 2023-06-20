@@ -71,14 +71,14 @@ class PaperPainter extends CustomPainter {
       path.addOval(Rect.fromCenter(center: Offset.zero, width: 60, height: 60));
       
       PathMetrics pms = path.computeMetrics();
-      pms.forEach((pm) {
+      for (var pm in pms) {
         //获取路径长度50%的点的信息
         Tangent? tangent = pm.getTangentForOffset(pm.length * animation.value);
-        if(tangent==null) return;
+        if(tangent==null) continue;
         print("---position:-${tangent.position}----angle:-${tangent.angle}----vector:-${tangent.vector}----");
 
         canvas.drawCircle(tangent.position, 5, Paint()..color = Colors.deepOrange);
-      });
+      }
       canvas.drawPath(path, paint);
   }
   

@@ -77,7 +77,7 @@ class SettingPage extends StatelessWidget{
       ),
       constraints: const BoxConstraints(minHeight: 480, minWidth: 320, maxWidth: 320),
     );
-    BlocProvider.of<AppConfigBloc>(context).switchThemeColor(newColor);
+    if(context.mounted) BlocProvider.of<AppConfigBloc>(context).switchThemeColor(newColor);
   }
 
   Widget buildLocalItem(BuildContext context){

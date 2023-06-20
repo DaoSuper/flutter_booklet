@@ -1,8 +1,5 @@
 import 'dart:math';
-import 'dart:typed_data';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_booklet/widgets/coordinate.dart';
 import 'dart:ui' as ui;
 
@@ -22,7 +19,7 @@ class ImageShaderDemo extends StatefulWidget {
 }
 
 class _ImageShaderDemoState extends State<ImageShaderDemo> {
-  ui.Image? _image;
+  // ui.Image? _image;
 
   @override
   void initState() {
@@ -31,8 +28,8 @@ class _ImageShaderDemoState extends State<ImageShaderDemo> {
   }
 
   _loadImage() async {
-    ByteData byteData = await rootBundle.load('assets/images/blr.jpeg');
-    _image = await decodeImageFromList(byteData.buffer.asUint8List());
+    // ByteData byteData = await rootBundle.load('assets/images/blr.jpeg');
+    // _image = await decodeImageFromList(byteData.buffer.asUint8List());
     setState(() {
       
     });

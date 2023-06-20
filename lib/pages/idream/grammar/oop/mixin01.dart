@@ -4,7 +4,6 @@ void main(){
   Shape shape = Shape();
   shape.speed = 20; 
   shape.move();//=====Shape move====
-  print(shape is MoveAble);// true
   shape.paint();
 }
 
