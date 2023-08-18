@@ -5,6 +5,7 @@ import 'package:flutter_booklet/pages/idraw/idraw_page.dart';
 import 'package:flutter_booklet/pages/idream/idream_page.dart';
 import 'package:flutter_booklet/pages/ilayout/ilayout_page.dart';
 import 'package:flutter_booklet/pages/irender/irender_page.dart';
+import 'package:flutter_booklet/pages/iwidget/iwidget_page.dart';
 import 'package:flutter_booklet/routes/app_router.dart';
 import 'package:flutter_booklet/widgets/dao_button.dart';
 
@@ -35,6 +36,7 @@ class HomePage extends StatelessWidget {
                   ItemBtn(btnName: '动画探索', onPressed: ()=> AppRouter.toPage(context, const AnimPage()),),
                   ItemBtn(btnName: '布局探索', onPressed: ()=> AppRouter.toPage(context, const ILayoutPage()),),
                   ItemBtn(btnName: '渲染机制', onPressed: ()=> AppRouter.toPage(context, const IRenderPage()),),
+                  ItemBtn(btnName: '组件集', onPressed: ()=> AppRouter.toPage(context, const IWidgetPage()),),
                   ItemBtn(btnName: '事例效果', onPressed: ()=> AppRouter.toPage(context, const ExamplePage()),),
                 ],
               ),

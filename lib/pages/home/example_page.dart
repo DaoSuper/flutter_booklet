@@ -12,7 +12,7 @@ class ExamplePage extends StatefulWidget {
 class _ExamplePageState extends State<ExamplePage> {
   Offset _dragGesturePosition = Offset.zero;
   bool _show = false;
-  final Size magnifierSize = Size(30, 30);
+  final Size magnifierSize = Size(60, 60);
 
   @override
   Widget build(BuildContext context) {
